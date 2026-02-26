@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sange.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sange</title>
+</head>
+<body>
+    <h1>Sange</h1>
+    <section id="sangliste">
+    </section>
+    <script>
+        const sange = {
+            titel: "That's What I Like",
+            artist: "Bruno Mars",
+            album: "24K Magic"
+        }
+        const sangliste = document.querySelector("#sangliste");
+        function showsang() {
+            console.log(sange);
+            sangliste.innerHTML = `
+                <article class="sangkort"> 
+                    <h2>${sange.titel}</h2>
+                    <p>${sange.artist}</p>
+                    <p>${sange.album}</p>
+                </article>
+            `;
+        }
+        showsang();
+        
+    </script>
+</body>
+</html>

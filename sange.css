@@ -1,0 +1,30 @@
+* {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+#sangliste {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+.sangkort {
+    box-sizing: border-box;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #971b1b;
+    border-radius: 5px;
+    background-color: #290a0a;  
+}
+.sangkort h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.sangkort p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+h1{
+    color: black;
+}
