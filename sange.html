@@ -11,23 +11,40 @@
     <section id="sangliste">
     </section>
     <script>
-        const sange = {
-            titel: "That's What I Like",
-            artist: "Bruno Mars",
-            album: "24K Magic"
+        const sange = [
+             {
+             titel: "That's What I Like",
+             artist: "Bruno Mars",
+             album: "24K Magic"
+        },
+        {
+            titel: "Thank you, Next",
+            artist: "Ariana Grande",
+            album: "Thank U, Next"
+        },
+        { 
+            titel: "I will always love you",
+            artist: "Whitney Houston",
+            album: "The Bodyguard Soundtrack"
+            
         }
+        ];
         const sangliste = document.querySelector("#sangliste");
-        function showsang() {
+        function showsange() {
             console.log(sange);
-            sangliste.innerHTML = `
+            sange.forEach(sange => {
+                sangliste.innerHTML += `
                 <article class="sangkort"> 
                     <h2>${sange.titel}</h2>
                     <p>${sange.artist}</p>
                     <p>${sange.album}</p>
                 </article>
             `;
+                
+            })
         }
-        showsang();
+           
+        showsange();
         
     </script>
 </body>
