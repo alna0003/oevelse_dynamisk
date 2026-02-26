@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Top 3 gode sange</h1>
+<main>
+    <section id="sangliste">
+    </section>
+</main>
+
+    <script>
+        const sang = {
+            titel: "Heart of a woman",
+            artist: "Summer walker",
+            album: "Still Over It"
+        };
+
+        const sangliste = document.querySelector("#sangliste");
+
+        function showsang() {
+            console.log(sang);
+            sangliste.innerHTML = `
+                <article class="sangkort"> 
+                    <h2>${sang.titel}</h2>
+                    <p>${sang.artist}</p>
+                    <p>${sang.album}</p>
+                </article>
+            `;
+        }
+        showsang();
+
+    </script>
+</body>
+
+</html>
+
+<!-- Du starter og lave din hel alm HTML skellet  -->
+<!-- 2. Efter laver du en JS og skriver const (som er vores objekter). vises i linje 15. -->
+<!-- 3. Efter laver du en const der repræsenterer en sang "sangliste" vises i linje 22-->
+<!-- Så går du tilbage i din html og laver en section med <article> eller hvad du nu vil bruge og skriver det indeni sectionen 
+    det kan være en h2, p eller andre HTML-elementer da det er her du vil vise sangens oplysninger. -->
+<!-- 4. Efter går du tilbage til JS og laver en function der hedder "function showsang" med hjælp af console.log(xxx);sangliste.innerHTML =
+ og derefter går du tilbage til din HTML og skriver det ind i sectionen som du har lavet tidligere. vises i linje 24. -->
+<!-- Når du har gjort dette kan du gå til din html section og slette det, da JS nu håndterer visningen. -->
+<!-- 5. Efter kalder du funktionen "showsang" for at vise sangen på skærmen. Vises i linje 34. -->
